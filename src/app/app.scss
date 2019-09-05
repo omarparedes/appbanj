@@ -4,3 +4,93 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+@font-face {
+	font-family: "Montserrat Light";
+	src: url("../assets/fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat SemiBold";
+	src: url("../assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+* {
+	font-family: "Montserrat Light"!important;
+}
+
+ion-title {
+	font-family: "Montserrat SemiBold"!important;
+	font-weight: bold;
+}
+
+.tab-selected {
+
+	font-size: 15px;
+	font-weight: bold;
+	animation: selectedText 500ms ease;
+	
+}
+
+@-webkit-keyframes selectedText {
+
+	from {
+		font-size: 11px;
+	}
+
+	to {
+		font-size: 15px;
+		font-weight: bold;
+	}
+}
+
+.amort {
+	
+	border-collapse: collapse;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: lighter;
+	text-align: center;
+	margin: 2.5% 0;
+	width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.amort thead{
+	background: #006162;
+	color:#FFF;
+}
+
+.table-warning {
+	background: rgba(255, 206, 0, 0.1);
+}
+
+.amort tbody tr.table-success:nth-child(even) {
+	background: rgba(0,97,98, 0.1);
+}
+
+.amort tbody tr td, .amort thead tr, .amort thead tr th, .amort tbody tr  {
+
+	border: 1px solid #006162!important;
+	font-weight: lighter;
+	padding: 5px;
+
+}
+
+.table-responsive {
+
+    display: table;
+
+}
+
+input:disabled {
+    opacity: 1!important;
+}
+
+@media screen and (max-width: 720px) {
+	.hide {
+		display: none;
+	}
+}

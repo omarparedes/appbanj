@@ -1,0 +1,170 @@
+[
+	{
+		"IdTitle": "102",
+		"Title": "General de Division",
+		"RetiroSedena": "65", 
+		"HaberesSedena": "14295.15"
+	},
+	{
+		"IdTitle": "202",
+		"Title": "Almirante",
+		"RetiroSedena": "65", 
+		"HaberesSedena": "14295.15"
+	},
+	{
+		"IdTitle": "103",
+		"Title": "General de Brigada",
+		"RetiroSedena": "63", 
+		"HaberesSedena": "13408.50"
+	},
+	{
+		"IdTitle": "203",
+		"Title": "Vicealmirante",
+		"RetiroSedena": "63", 
+		"HaberesSedena": "13408.50"
+	},
+	{
+		"IdTitle": "104",
+		"Title": "General Brigadier",
+		"RetiroSedena": "61", 
+		"HaberesSedena": "12474.40"
+	},
+	{
+		"IdTitle": "204",
+		"Title": "Contralmirante",
+		"RetiroSedena": "61", 
+		"HaberesSedena": "12474.40"
+	},
+	{
+		"IdTitle": "105",
+		"Title": "Coronel",
+		"RetiroSedena": "60", 
+		"HaberesSedena": "10850.50"
+	},
+	{
+		"IdTitle": "205",
+		"Title": "Capitan de Navio",
+		"RetiroSedena": "60", 
+		"HaberesSedena": "10850.50"
+	},
+	{
+		"IdTitle": "106",
+		"Title": "Teniente Coronel",
+		"RetiroSedena": "58", 
+		"HaberesSedena": "9915.05"
+	},
+	{
+		"IdTitle": "206",
+		"Title": "Capitan de Fragata",
+		"RetiroSedena": "58", 
+		"HaberesSedena": "9915.05"
+	},
+	{
+		"IdTitle": "107",
+		"Title": "Mayor",
+		"RetiroSedena": "56", 
+		"HaberesSedena": "9028.10"
+	},
+	{
+		"IdTitle": "207",
+		"Title": "Capitan de Corbeta",
+		"RetiroSedena": "56", 
+		"HaberesSedena": "9028.10"
+	},
+	{
+		"IdTitle": "108",
+		"Title": "Capitan 1o",
+		"RetiroSedena": "54", 
+		"HaberesSedena": "7724.65"
+	},
+	{
+		"IdTitle": "208",
+		"Title": "Teniente de Navio",
+		"RetiroSedena": "54", 
+		"HaberesSedena": "7724.65"
+	},
+	{
+		"IdTitle": "109",
+		"Title": "Capitan 2o",
+		"RetiroSedena": "53", 
+		"HaberesSedena": "6836.30"
+	},
+	{
+		"IdTitle": "209",
+		"Title": "Teniente de Fragata",
+		"RetiroSedena": "53", 
+		"HaberesSedena": "6836.30"
+	},
+	{
+		"IdTitle": "110",
+		"Title": "Teniente",
+		"RetiroSedena": "52", 
+		"HaberesSedena": "6130.75"
+	},
+	{
+		"IdTitle": "210",
+		"Title": "Teniente de Corbeta",
+		"RetiroSedena": "52", 
+		"HaberesSedena": "6130.75"
+	},
+	{
+		"IdTitle": "111",
+		"Title": "Subteniente",
+		"RetiroSedena": "51", 
+		"HaberesSedena": "5564.90"
+	},
+	{
+		"IdTitle": "211",
+		"Title": "1er Maestre",
+		"RetiroSedena": "51", 
+		"HaberesSedena": "5564.90"
+	},
+	{
+		"IdTitle": "112",
+		"Title": "Sargento Primero",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "4774.25"
+	},
+	{
+		"IdTitle": "212",
+		"Title": "2do Maestre",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "4774.25"
+	},
+	{
+		"IdTitle": "113",
+		"Title": "Sargento Segundo",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "4513.00"
+	},
+	{
+		"IdTitle": "213",
+		"Title": "3er Maestre",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "4513.00"
+	},
+	{
+		"IdTitle": "114",
+		"Title": "Cabo",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "3870.50"
+	},
+	{
+		"IdTitle": "214",
+		"Title": "Cabo de Mar",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "3870.50"
+	},
+	{
+		"IdTitle": "115",
+		"Title": "Soldado",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "3498.45"
+	},
+	{
+		"IdTitle": "215",
+		"Title": "Marinero",
+		"RetiroSedena": "50", 
+		"HaberesSedena": "3498.45"
+	}
+]

@@ -1,0 +1,93 @@
+.item, .item-list {
+    background: #FFF;
+    margin: 0.75rem;
+    border-radius: 10px;
+    height: 60px;
+    width: calc(100vw - 1.5rem);
+    box-shadow: 0 5px 8px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.btn-pront {
+    width: 80vw;
+    margin: auto;
+}
+
+.label-item {
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat Light';
+    font-weight: bold;
+}
+
+.item-cont {
+    padding: 0 10px;
+    min-height: 25vh;
+}
+
+.item-list:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#promociones {
+    padding: 20px 0;
+}
+
+.icon {
+    width: 35px;
+    margin: 0 20px;
+}
+
+.next-icon {
+    width: 15px;
+    margin: 0 20px 0 auto;
+}
+
+.container {
+	background: #E5E5E5;
+	display: grid;
+	width: 100vw;
+	min-height: 100vh;
+    grid-template-columns: 1fr;
+}
+
+ion-list {
+    background: #E5E5E5;
+    min-height: 35vh;
+}
+
+.amort tbody tr td, .amort thead tr, .amort thead tr th, .amort tbody tr  {
+
+	border: none!important;
+	font-weight: lighter;
+	padding: 5px;
+
+}
+
+.amort tbody tr.table-success:nth-child(even) {
+	background: rgba(0,97,98, 0.1);
+}
+
+.amort tbody {
+    background: #FFF;
+}
+
+table {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12), 0 5px 15px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+table th {
+    background: #00554d;
+    font-weight: bold;
+}

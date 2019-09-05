@@ -3,13 +3,21 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /** banjercito **/
+  --ion-color-banjercito: #006162;
+  --ion-color-banjercito-rgb: 0,97,98;
+  --ion-color-banjercito-contrast: #ffffff;
+  --ion-color-banjercito-contrast-rgb: 255,255,255;
+  --ion-color-banjercito-shade: #005556;
+  --ion-color-banjercito-tint: #1a7172;
+
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary: #006162;
+  --ion-color-primary-rgb: 0,97,98;
   --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #005556;
+  --ion-color-primary-tint: #1a7172;
 
   /** secondary **/
   --ion-color-secondary: #0cd1e8;
@@ -74,4 +82,21 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+.ion-color-banjercito {
+  --ion-color-base: var(--ion-color-banjercito) !important;
+  --ion-color-base-rgb: var(--ion-color-banjercito-rgb) !important;
+  --ion-color-contrast: var(--ion-color-banjercito-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-banjercito-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-banjercito-shade) !important;
+  --ion-color-tint: var(--ion-color-banjercito-tint) !important;
+}
+
+.alert-head {
+  background: var(--ion-color-banjercito);
+}
+
+.alert-title {
+  color: #FFF!important;
 }

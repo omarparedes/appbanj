@@ -1,0 +1,596 @@
+[
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 3000, 
+        "valor": 0.0088
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 15000, 
+        "valor": 0.0092
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 30000, 
+        "valor": 0.0095
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 50000, 
+        "valor": 0.0098
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 100000, 
+        "valor": 0.0102
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 250000, 
+        "valor": 0.0105
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 500000, 
+        "valor": 0.0108
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 750000, 
+        "valor": 0.0111
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 1000000, 
+        "valor": 0.0115
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 2500000, 
+        "valor": 0.0129
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 1, 
+        "rango": 5000000, 
+        "valor": 0.0148
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 3000, 
+        "valor": 0.0207
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 15000, 
+        "valor": 0.0220
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 30000, 
+        "valor": 0.0224
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 50000, 
+        "valor": 0.0237
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 100000, 
+        "valor": 0.0260
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 250000, 
+        "valor": 0.0273
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 500000, 
+        "valor": 0.0292
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 750000, 
+        "valor": 0.0312
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 1000000, 
+        "valor": 0.0332
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 2500000, 
+        "valor": 0.0351
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 7, 
+        "rango": 5000000, 
+        "valor": 0.0362
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 3000, 
+        "valor": 0.0211
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 15000, 
+        "valor": 0.0222
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 30000, 
+        "valor": 0.0227
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 50000, 
+        "valor": 0.0240
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 100000, 
+        "valor": 0.0263
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 250000, 
+        "valor": 0.0279
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 500000, 
+        "valor": 0.0299
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 750000, 
+        "valor": 0.0319
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 1000000, 
+        "valor": 0.0338
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 2500000, 
+        "valor": 0.0359
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 14, 
+        "rango": 5000000, 
+        "valor": 0.0369
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 3000, 
+        "valor": 0.0351
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 15000, 
+        "valor": 0.0370
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 30000, 
+        "valor": 0.0390
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 50000, 
+        "valor": 0.0410
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 100000, 
+        "valor": 0.0430
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 250000, 
+        "valor": 0.0470
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 500000, 
+        "valor": 0.0490
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 750000, 
+        "valor": 0.0497
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 1000000, 
+        "valor": 0.0510
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 2500000, 
+        "valor": 0.0523
+    }, 
+    {
+        "inversion": "estrategia", 
+        "plazo": 28, 
+        "rango": 5000000, 
+        "valor": 0.0527
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 500, 
+        "valor": 0.0118
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 2500, 
+        "valor": 0.0127
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 5000, 
+        "valor": 0.0135
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 10000, 
+        "valor": 0.0138
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 15000, 
+        "valor": 0.0144
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 25000, 
+        "valor": 0.0152
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 50000, 
+        "valor": 0.0162
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 100000, 
+        "valor": 0.0178
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 250000, 
+        "valor": 0.0188
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 500000, 
+        "valor": 0.0201
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 7, 
+        "rango": 1000000, 
+        "valor": 0.0235
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 500, 
+        "valor": 0.0190
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 2500, 
+        "valor": 0.0201
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 5000, 
+        "valor": 0.0215
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 10000, 
+        "valor": 0.0228
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 15000, 
+        "valor": 0.0243
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 25000, 
+        "valor": 0.0257
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 50000, 
+        "valor": 0.0266
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 100000, 
+        "valor": 0.0293
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 250000, 
+        "valor": 0.0309
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 500000, 
+        "valor": 0.0335
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 28, 
+        "rango": 1000000, 
+        "valor": 0.0370
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 500, 
+        "valor": 0.0224
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 2500, 
+        "valor": 0.0238
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 5000, 
+        "valor": 0.0254
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 10000, 
+        "valor": 0.0270
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 15000, 
+        "valor": 0.0286
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 25000, 
+        "valor": 0.0302
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 50000, 
+        "valor": 0.0318
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 100000, 
+        "valor": 0.0333
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 250000, 
+        "valor": 0.0349
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 500000, 
+        "valor": 0.0366
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 91, 
+        "rango": 1000000, 
+        "valor": 0.0382
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 500, 
+        "valor": 0.0230
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 2500, 
+        "valor": 0.0247
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 5000, 
+        "valor": 0.0263
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 10000, 
+        "valor": 0.0280
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 15000, 
+        "valor": 0.0295
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 25000, 
+        "valor": 0.0312
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 50000, 
+        "valor": 0.0328
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 100000, 
+        "valor": 0.0345
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 250000, 
+        "valor": 0.0361
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 500000, 
+        "valor": 0.0378
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 182, 
+        "rango": 1000000, 
+        "valor": 0.0393
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 500, 
+        "valor": 0.0233
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 2500, 
+        "valor": 0.0250
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 5000, 
+        "valor": 0.0266
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 10000, 
+        "valor": 0.0283
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 15000, 
+        "valor": 0.0299
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 25000, 
+        "valor": 0.0316
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 50000, 
+        "valor": 0.0332
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 100000, 
+        "valor": 0.0349
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 250000, 
+        "valor": 0.0366
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 500000, 
+        "valor": 0.0382
+    }, 
+    {
+        "inversion": "prlv", 
+        "plazo": 364, 
+        "rango": 1000000, 
+        "valor": 0.0398
+    }
+]

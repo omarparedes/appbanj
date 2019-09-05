@@ -1,0 +1,204 @@
+<ion-header>
+  <ion-toolbar color="banjercito">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tarifario" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Prontuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container-detail" *ngIf="complete">
+    <div class="card-container">
+      <img *ngIf="tipo === 'mortgage'" src="../../assets/img/hipotecario.png" />
+      <img *ngIf="tipo === 'money'" src="../../assets/img/liquidez.jpg" />
+      <img *ngIf="tipo === 'card'" src="../../assets/img/card.jpg" />
+      <img *ngIf="tipo === 'car'" src="../../assets/img/car.png" />
+      <img *ngIf="tipo === 'motorbike'" src="../../assets/img/motorbike.jpg" />
+      <div class="container-text">
+        <h2 class="bolder-card bolder-title">Producto:</h2>
+        <p class="text-card">{{ promotions.Name }}</p>
+        <h2 class="bolder-card bolder-title">Monto:</h2>
+        <p class="text-card">Desde {{ promotion.MontoMin | currency}} - {{ promotion.MontoMax | currency }}</p>
+        <h2 class="bolder-card bolder-title">Plazo:</h2>
+        <p class="text-card">
+          <span *ngIf="promotions.Terms.split(',').length > 1">Desde {{ promotions.Terms.split(',')[0] }} - </span>
+          {{ promotions.Terms.split(',')[(promotions.Terms.split(',').length - 1)] }} 
+          pagos 
+          <span *ngIf="promotions.frecuency === '2'">quincenales</span>
+          <span *ngIf="promotions.frecuency === '3'">mensuales</span>
+        </p>
+        <h2 class="bolder-card bolder-title">Tasa de interés:</h2>
+        <p class="text-card">{{ promotions.InterestTax }} %</p>
+
+        <div *ngIf="idPromotion == 100 && situacion === 'Retirado'">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Personal retirado de Soldado / Marinero a General / Almirante.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 101">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Aplica para autos nuevos, seminuevos (con antigüedad máxima del auto de 4 años y avalúo de agencia automotriz o bancario) y acreedor sustituto.
+          </p>
+          <p class="text-card" *ngIf="situacion === 'Retirado'">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 102">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Aplica para autos nuevos, seminuevos (con antigüedad máxima del auto de 4 años y avalúo de agencia automotriz o bancario) y acreedor sustituto.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Dirigido a padres, hijos (as), esposo (a) de personal en activo o retiro; deberá comprobarlo mediante acta de nacimiento o matrimonio.
+          </p>
+          <p class="text-card" *ngIf="situacion === 'Retirado'">
+            <span class="list-det">*</span> Para personal retirado el aval solo se considera a partir de subteniente.
+          </p>
+          <p class="text-card" *ngIf="situacion === 'Retirado'">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="(idPromotion == 103 || idPromotion == 110 || idPromotion == 112) && situacion === 'Retirado'">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> No aplica para personal en retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 104">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card" *ngIf="situacion === 'Retirado'">
+            <span class="list-det">*</span> No aplica tropa retirado.<br>
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Edad máxima de 70 años para otorgamiento.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Los montos máximos se consideran también para la ampliación, a excepción del personal de tropa (cabo y sargentos) que será una línea máxima de $15,000.
+          </p>
+          <p class="text-card" *ngIf="situacion === 'Retirado'">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 111">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Personal de tropa: Sargento 2o / 3er Maestre a Sargento 1o / 2o Maestre (activos y retirados) solo para pago de pasivos sin remanente.
+          </p>
+          <p class="text-card" *ngIf="situacion === 'Retirado'">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 114">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Para personal de tropa el financiamiento es del 90%.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 115">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Financiamiento del 100% del valor avalúo del inmueble.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Monto a partir de $390,000 Banjercito, en ISSFAM monto de acuerdo a tabulador.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 116">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Financiamiento del 90% del valor del inmueble (70% para tropa).
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Valor mínimo del inmueble $350,000.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 118">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Valor máximo de la vivienda $593,322.57.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 119">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Financiamiento del 100% del valor avalúo del inmueble.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Para los créditos de personal retirado con edad máxima de 75 años.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 120">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Valor máximo de la vivienda $593,322.57.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Para los créditos de personal retirado con edad máxima de 75 años.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 124">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Financiamiento del 90% del valor del inmueble (70% para tropa).
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Valor mínimo del inmueble $350,000.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Para los créditos de personal retirado con edad máxima de 75 años.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 126">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Ser madre soltera y no tener registrado ante las dependencias de seguridad social militar o naval un esposo, cónyuge o concubino.
+          </p>
+        </div>
+
+        <div *ngIf="idPromotion == 127">
+          <h2 class="bolder-card bolder-title">Características generales:</h2>
+          <p class="text-card">
+            <span class="list-det">*</span> Ser madre soltera y no tener registrado ante las dependencias de seguridad social militar o naval un esposo, cónyuge o concubino.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> Para los créditos de personal retirado con edad máxima de 75 años.
+          </p>
+          <p class="text-card">
+            <span class="list-det">*</span> En retirados el descuento máximo será de 49.99% sobre su haber de retiro.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</ion-content>

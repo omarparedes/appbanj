@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-toolbar color="banjercito">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="home" text=""></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        Divisas
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  
+  <section *ngIf="calculo">
+    <div class="cambio">
+      <ion-item>
+        <ion-label position="floating">Dólar estadounidense</ion-label>
+        <ion-input type="number" #montousd value="1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pesos</ion-label>
+        <ion-input [value]="divisas.USD_MXN * montousd.value | currency" disabled></ion-input>
+      </ion-item>
+    </div>
+    <div class="cambio">
+      <ion-item>
+        <ion-label position="floating">Euro</ion-label>
+        <ion-input type="number" #montoeur value="1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pesos</ion-label>
+        <ion-input [value]="divisas.EUR_MXN * montoeur.value | currency" disabled></ion-input>
+      </ion-item>
+    </div>
+    <div class="cambio">
+      <ion-item>
+        <ion-label position="floating">Libra esterlina</ion-label>
+        <ion-input type="number" #montogbp value="1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pesos</ion-label>
+        <ion-input [value]="divisas.GBP_MXN * montogbp.value | currency" disabled></ion-input>
+      </ion-item>
+    </div>
+    <div class="cambio">
+      <ion-item>
+        <ion-label position="floating">Dólar canadiense</ion-label>
+        <ion-input type="number" #montocad value="1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pesos</ion-label>
+        <ion-input [value]="divisas.CAD_MXN * montocad.value | currency" disabled></ion-input>
+      </ion-item>
+    </div>
+    <div class="cambio">
+      <ion-item>
+        <ion-label position="floating">Yen</ion-label>
+        <ion-input type="number" #montojpy value="1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pesos</ion-label>
+        <ion-input [value]="divisas.JPY_MXN * montojpy.value | currency" disabled></ion-input>
+      </ion-item>
+    </div>
+    <div class="cambio">
+      <ion-item>
+        <ion-label position="floating">Bitcoin</ion-label>
+        <ion-input type="number" #montobtc value="1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pesos</ion-label>
+        <ion-input [value]="divisas.BTC_MXN * montobtc.value | currency" disabled></ion-input>
+      </ion-item>
+    </div>
+  </section>
+
+</ion-content>

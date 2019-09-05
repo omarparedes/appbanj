@@ -4,23 +4,20 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+import { timer } from 'rxjs';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
   public appPages = [
-    {
-      title: 'Home',
-      url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+    { title: 'Simulador', url: '/simulador', icon: 'clipboard' },
+    { title: 'Tarifario', url: '/tarifario', icon: 'cash' }, 
+    { title: 'Inversiones', url: '/inversiones', icon: 'business' }
   ];
+
+  showSplash = true;
 
   constructor(
     private platform: Platform,
@@ -31,6 +28,7 @@ export class AppComponent {
   }
 
   initializeApp() {
+
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();

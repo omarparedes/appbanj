@@ -1,0 +1,254 @@
+// General container
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    width: 100vw;
+    min-height: 100%;
+    background: var(--ion-color-banjercito);
+}
+
+// Data section
+#data {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20vw 60vw 20vw;
+}
+
+#data img {
+    width: 50%;
+}
+
+#logo, #back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    outline: none;
+}
+
+#logo img {
+    width: 30vw;
+}
+
+#datos {
+    background: var(--ion-color-light);
+    border-radius: 15px;
+    margin: 10px;
+    overflow-y: auto;
+    padding: 25px;
+}
+
+/* form starting stylings ------------------------------- */
+.group { 
+    position:relative; 
+    margin-bottom:30px;
+    width: 100%;
+}
+input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid var(--ion-color-dark-tint);
+    background: transparent;
+    color: var(--ion-color-dark-tint);
+}
+input:focus { 
+    outline:none; 
+}
+
+/* LABEL ======================================= */
+label {
+    color:var(--ion-color-dark-tint); 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top:-20px;
+    font-size:14px;
+    color:var(--ion-color-banjercito);
+}
+
+/* BOTTOM BARS ================================= */
+.bar { 
+    position:relative; 
+    display:block; 
+    width:100%; 
+}
+
+.bar:before, .bar:after {
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:var(--ion-color-banjercito); 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+.bar:before {
+    left:50%;
+}
+
+.bar:after {
+    right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:var(--ion-color-banjercito); }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:var(--ion-color-banjercito); }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:var(--ion-color-banjercito); }
+    to 	{ width:0; background:transparent; }
+}
+
+
+/* select starting stylings ------------------------------*/
+.select {
+    position: relative;
+    width: 100%;
+    margin-bottom:30px;
+}
+
+.select-text {
+    position: relative;
+    font-family: inherit;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    font-size: 18px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--ion-color-dark-tint);
+}
+
+/* Remove focus */
+.select-text:focus {
+    outline: none;
+    border-bottom: 1px solid var(--ion-color-dark-tint);
+}
+
+    /* Use custom arrow */
+.select .select-text {
+    appearance: none;
+    -webkit-appearance:none
+}
+
+.select:after {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    /* Styling the down arrow */
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--ion-color-dark-tint);
+    pointer-events: none;
+}
+
+
+/* LABEL ======================================= */
+.select-label {
+    color: var(--ion-color-dark-tint);
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+/* active state */
+.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
+    color: var(--ion-color-banjercito);
+    top: -20px;
+    transition: 0.2s ease all;
+    font-size: 14px;
+}
+
+/* BOTTOM BARS ================================= */
+.select-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.select-bar:before, .select-bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: var(--ion-color-banjercito);
+    transition: 0.2s ease all;
+}
+
+.select-bar:before {
+    left: 50%;
+}
+
+.select-bar:after {
+    right: 50%;
+}
+
+/* active state */
+.select-text:focus ~ .select-bar:before, .select-text:focus ~ .select-bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.select-highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}

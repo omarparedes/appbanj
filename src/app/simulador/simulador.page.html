@@ -1,0 +1,198 @@
+<ion-header>
+  <ion-toolbar color="banjercito">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Simulador Banjercito
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <ion-list>
+  
+      <ion-item>
+        <ion-label position="floating">Producto</ion-label>
+        <ion-select okText="Seleccionar" cancelText="Cancelar" #promotionS (ionChange)="showTerms(promotionS.value)">
+          <ion-select-option *ngFor="let promotion of promotions" [value]="promotion.IdPromotion">{{ promotion.Name }}</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Plazo</ion-label>
+        <ion-select okText="Seleccionar" cancelText="Cancelar" #plazo>
+          <ion-select-option *ngFor="let term of terms" [value]="term">{{ term }}</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Monto</ion-label>
+        <ion-input type="number" #monto></ion-input>
+      </ion-item>
+
+      <ion-label style="margin-left: 5vw; font-weight: bold;">SECORE al momento de retiro: {{ SECORE | currency }}</ion-label>
+      <ion-item>
+        <ion-label position="floating">SECORE</ion-label>
+        <ion-input type="number" #secoreS></ion-input>
+      </ion-item>
+      <!-- <ion-item>
+        <ion-label>Monto</ion-label>
+        <ion-range min="0" [max]="montoFin" mode="ios" [step]="montoFin / 20" #monto></ion-range>
+        <ion-label><small>{{ monto.value }}</small></ion-label>
+      </ion-item> -->
+      <br>
+      <ion-button color="banjercito" expand="block" (click)="amortiza(monto.value, plazo.value, nacimientoS, altaS, gradoS, secoreS.value)" [disabled]="deshabilita">Calcular</ion-button>
+      <!-- <ion-button color="banjercito" expand="full" (click)="calculaAmort()">Calcular</ion-button> -->
+  
+    </ion-list>
+
+    <div *ngIf="errorData" class="row justify-content-md-center">
+      <div class="col col-md-3 col-sm-6 col-xs-12">
+    
+        <div class="alert alert-danger text-center" role="alert" *ngIf="errorAmount">
+          <strong>* </strong>El monto debe estar entre {{ termAmort[0].MontoMin | currency }} y {{ termAmort[0].MontoMax | currency }}.
+        </div>
+    
+        <div class="alert alert-danger text-center" role="alert" *ngIf="errorBirth">
+          <strong>* </strong>La edad del cliente debe estar entre {{ termAmort[0].EdadMin }} y {{ termAmort[0].EdadMax }} años.
+        </div>
+    
+        <div class="alert alert-danger text-center" role="alert" *ngIf="errorEntrance">
+          <strong>* </strong>La antigüedad del cliente debe estar entre {{ termAmort[0].AntigI }} y {{ termAmort[0].AntigF }} meses.
+        </div>
+    
+        <div class="alert alert-danger text-center" role="alert" *ngIf="errorEntranceValidation">
+          <strong>* </strong>La fecha de alta debe ser mayor a la edad mínima requerida ({{ termAmort[0].EdadMin }} años).
+        </div>
+    
+        <div class="alert alert-danger text-center" role="alert" *ngIf="errorPlazo">
+          <strong>* </strong>Selecciona un plazo válido.
+        </div>
+    
+      </div>
+    </div>
+    
+    
+    <div class="item-cont">
+    
+      <div *ngIf="amortizaF" class="row justify-content-md-center">
+      
+        <div class="col col-md-3 col-sm-6 col-xs-12">
+      
+          <!-- <button mat-button color="accent" (click)="printTable()">Imprimir</button> -->
+          
+        </div>
+      
+        <div class="col col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xm-10 col-xm-offset-1 table-responsive" id="printed">
+      
+          <div style="width: 100%; text-align:center;" class="amort">
+            <div style="width: 100%;vertical-align:middle;display: table-cell;text-align:center;">
+              <p style="font-weight: bold;">BANCO NACIONAL DEL EJÉRCITO, FUERZA AÉREA Y ARMADA, S.N.C.</p>
+              <p>CONDICIONES DE CRÉDITO</p>
+              <p>TABLA DE PAGOS</p>
+            </div>
+          </div>
+
+          <table class="amort" >
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Plazo</th>
+                <th>Monto</th>
+                <th>Tasa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ promotionName }}</td>
+                <td>{{ plazof }}</td>
+                <td>{{ montof | currency }}</td>
+                <td>{{ tint }}%</td>
+              </tr>
+            </tbody>
+          </table>
+      
+          <table class="amort" *ngIf="amortizaRetiro > 0">
+            <thead>
+              <tr>
+                <th>Pago en el activo</th>
+                <th>Pago en el retiro</th>
+                <th>Haberes en el retiro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ pagoActivo | currency }} Quincenal</td>
+                <td>{{ montoRetiro * 2 | currency }} Mensual</td>
+                <td>{{ haberRetiro | currency }}</td>
+              </tr>
+            </tbody>
+          </table>
+      
+          <table class="amort" *ngIf="termsData[0].IdPromotion >= 1000">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Comisión por apertura</th>
+                <th style="width: 25%;">Interes gracia</th>
+                <th style="width: 25%;">IVA</th>
+                <th style="width: 25%;">Importe neto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ montoPQ | currency }}</td>
+                <td>{{ interesPQ | currency }}</td>
+                <td>{{ IVAinteresPQ | currency }}</td>
+                <td>{{ monto - (montoPQ + interesPQ + fondoGarantia) | currency }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ion-button color="banjercito" fill="clear" expand="block" (click)="showAmort()">{{ muestraAmort ? "Ocultar" : "Mostrar" }} amortización</ion-button>
+      
+          <table class="amort" *ngIf="muestraAmort">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Fecha Pago</th>
+                <th class="hide">Días</th>
+                <th>Pago</th>
+                <th class="hide">Monto Capital</th>
+                <th class="hide">Monto Interés</th>
+                <th class="hide">Monto Impuestos</th>
+                <th>Saldo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let sAmort of amort; let i = index" [className]="(amortizaRetiro > 0 && amortizaRetiro >= i) ? 'table-success' : (amortizaRetiro < i && amortizaRetiro > 0 ) ? 'table-warning' : 'table-success'">
+                <td>{{ sAmort.NumAmort }}</td>
+                <td>{{ sAmort.fecha }}</td>
+                <td class="hide">{{ sAmort.dias }}</td>
+                <td>{{ sAmort.MontoAmort | currency }}</td>
+                <td class="hide">{{ sAmort.MontoCapital | currency }}</td>
+                <td class="hide">{{ sAmort.MontoInteres | currency }}</td>
+                <td class="hide">{{ sAmort.MontoImpuestos | currency }}</td>
+                <td>{{ sAmort.Saldo | currency }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="amort" style="text-align: justify!important;">
+            <p>* CAT PROMEDIO <span style="font-size: 20px!important;">{{ valorCAT }}%</span> SIN IVA CALCULADO PARA FINES INFORMATIVOS Y DE COMPARACIÓN EXCLUSIVAMENTE. <small>(Fecha de cálculo {{ fechaActual }})</small></p>
+            <p>* LA INFORMACIÓN OBTENIDA ES INFORMATIVA, POR LO QUE NO GENERA UNA OBLIGACIÓN A BANJERCITO SNC PARA OTORGAR EL CRÉDITO.</p>
+            <p>* EL MONTO A FINANCIAR PUEDE SER DIFERENTE AL CALCULADO EN ESTE SIMULADOR DEPENDIENDO DE LA CAPACIDAD DE PAGO DEL CLIENTE.</p>
+            <p>* LAS CARACTERÍSTICAS FINANCIERAS DEL PRODUCTO ESTÁN SUJETAS A CAMBIOS SIN PREVIO AVISO.</p>
+          </div>
+        </div>
+      
+      </div>
+    
+    </div>
+    
+    <br>
+
+  </div>
+</ion-content>

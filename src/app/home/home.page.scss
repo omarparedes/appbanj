@@ -1,4 +1,122 @@
-.welcome-card img {
-  max-height: 35vh;
-  overflow: hidden;
+// General container
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 35% 65%;
+  width: 100vw;
+  height: 100%;
+  background: var(--ion-color-banjercito);
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+}
+
+span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+label {
+  font-size: 10px;
+}
+
+// Data section
+#data {
+  display: grid;
+  grid-template-rows: 25% 1fr;
+  grid-template-columns: 1fr;
+}
+
+#cliente {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+}
+
+#profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75% 25%;
+  outline: none;
+}
+
+#nav {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 20vw 60vw 20vw;
+}
+
+#army {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo, #back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  outline: none;
+}
+
+#back img {
+  width: 50%;
+}
+
+#logo img {
+  width: 30vw;
+}
+
+#datos {
+  color: #FFF;
+  font-family: 'Montserrat Light';
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#datos div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+}
+
+// Widgets section
+#widgets {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.circle {
+  border-top-right-radius: 15%;
+  border-top-left-radius: 15%;
+  z-index: 100;
+  margin-top: -10%;
+  background-size: cover;
+}
+
+#simulador {
+  background-image: url('../../assets/img/simulador.jpg');
+}
+
+#prontuario {
+  background-image: url('../../assets/img/prontuario.jpg');
+}
+
+#inversiones {
+  background-image: url('../../assets/img/inversion.jpg');
+}
+
+.circle h1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-weight: bold;
+  color: #FFF;
+  font-family: 'Montserrat Light';
 }

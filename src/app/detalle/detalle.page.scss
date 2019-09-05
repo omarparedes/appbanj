@@ -1,0 +1,50 @@
+.bolder-card {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.bolder-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #00554d;
+}
+ion-content {
+
+    background: #E5E5E5;
+
+}
+
+.text-card {
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.container-detail {
+    width: 100vw;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #E5E5E5;
+}
+
+.card-container {
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0,0,0,0.24);
+    background: #FFF;
+}
+
+img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.container-text {
+    padding: 10px;
+}
+
+.list-det {
+    color: #00554d;
+}

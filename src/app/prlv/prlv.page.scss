@@ -1,0 +1,170 @@
+.item, .item-list {
+    background: #FFF;
+    margin: 0.75rem;
+    border-radius: 10px;
+    height: 60px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.item-list {
+    height: calc(100% - 1.5rem);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    margin: 0.75rem auto;
+}
+
+.error {
+    color: #f04141;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success {
+    color: #00554d;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.btn-pront {
+    width: 80vw;
+    margin: auto;
+}
+
+.label-item {
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat Light';
+    font-weight: bold;
+}
+
+.item-cont {
+    padding: 0 10px;
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.item-list:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#p1, #p2, #p3, #p4 {
+    height: 40vh;
+}
+
+#promociones {
+    padding: 20px 0;
+}
+
+.icon {
+    width: 35px;
+    margin: 0 20px;
+}
+
+.next-icon {
+    width: 15px;
+    margin: 0 20px 0 auto;
+}
+
+.container {
+	background: #E5E5E5;
+    width: 100%; 
+    min-height: 100vh; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+
+ion-list {
+    background: #E5E5E5;
+    height: 15vh;
+}
+
+.amort tbody tr td, .amort thead tr, .amort thead tr th, .amort tbody tr  {
+
+	border: none!important;
+	font-weight: lighter;
+	padding: 5px;
+
+}
+
+.amort tbody tr:nth-child(even) {
+	background: #F5F5F5;
+}
+
+.amort tbody {
+    background: #FFF;
+}
+
+table {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12), 0 5px 15px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+table th {
+    background: #00554d;
+    font-weight: bold;
+}
+
+.not-selected {
+    opacity: 0.25;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold!important;
+      text-transform: uppercase;
+      color: #00554d;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }

@@ -1,0 +1,402 @@
+[
+	{
+        "AniosServicio": "20", 
+        "Factor": "17", 
+        "Porcentaje": "50"
+    },
+    {
+        "AniosServicio": "21", 
+        "Factor": "18", 
+        "Porcentaje": "51"
+    },
+    {
+        "AniosServicio": "22", 
+        "Factor": "19", 
+        "Porcentaje": "52"
+    },
+    {
+        "AniosServicio": "23", 
+        "Factor": "20", 
+        "Porcentaje": "53"
+    },
+    {
+        "AniosServicio": "24", 
+        "Factor": "21", 
+        "Porcentaje": "54"
+    },
+    {
+        "AniosServicio": "25", 
+        "Factor": "22", 
+        "Porcentaje": "55"
+    },
+    {
+        "AniosServicio": "26", 
+        "Factor": "23", 
+        "Porcentaje": "56"
+    },
+    {
+        "AniosServicio": "27", 
+        "Factor": "24", 
+        "Porcentaje": "57"
+    },
+    {
+        "AniosServicio": "28", 
+        "Factor": "25", 
+        "Porcentaje": "58"
+    },
+    {
+        "AniosServicio": "29", 
+        "Factor": "26", 
+        "Porcentaje": "59"
+    },
+    {
+        "AniosServicio": "30", 
+        "Factor": "27", 
+        "Porcentaje": "60"
+    },
+    {
+        "AniosServicio": "31", 
+        "Factor": "28", 
+        "Porcentaje": "62"
+    },
+    {
+        "AniosServicio": "32", 
+        "Factor": "29", 
+        "Porcentaje": "64"
+    },
+    {
+        "AniosServicio": "33", 
+        "Factor": "30", 
+        "Porcentaje": "66"
+    },
+    {
+        "AniosServicio": "34", 
+        "Factor": "31", 
+        "Porcentaje": "68"
+    },
+    {
+        "AniosServicio": "35", 
+        "Factor": "32", 
+        "Porcentaje": "70"
+    },
+    {
+        "AniosServicio": "36", 
+        "Factor": "34", 
+        "Porcentaje": "72"
+    },
+    {
+        "AniosServicio": "37", 
+        "Factor": "35", 
+        "Porcentaje": "74"
+    },
+    {
+        "AniosServicio": "38", 
+        "Factor": "36", 
+        "Porcentaje": "76"
+    },
+    {
+        "AniosServicio": "39", 
+        "Factor": "37", 
+        "Porcentaje": "78"
+    },
+    {
+        "AniosServicio": "40", 
+        "Factor": "40", 
+        "Porcentaje": "80"
+    },
+    {
+        "AniosServicio": "41", 
+        "Factor": "41", 
+        "Porcentaje": "82"
+    },
+    {
+        "AniosServicio": "42", 
+        "Factor": "42", 
+        "Porcentaje": "84"
+    },
+    {
+        "AniosServicio": "43", 
+        "Factor": "43", 
+        "Porcentaje": "86"
+    },
+    {
+        "AniosServicio": "44", 
+        "Factor": "44", 
+        "Porcentaje": "88"
+    },
+    {
+        "AniosServicio": "45", 
+        "Factor": "45", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "46", 
+        "Factor": "46", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "47", 
+        "Factor": "47", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "48", 
+        "Factor": "48", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "49", 
+        "Factor": "49", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "50", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "51", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "52", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "53", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "54", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "55", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "56", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "57", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "58", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "59", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "60", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "61", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "62", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "63", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "64", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "65", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "66", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "67", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "68", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "69", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "70", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "71", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "72", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "73", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "74", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "75", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "76", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "77", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "78", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "79", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "80", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "81", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "82", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "83", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "84", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "85", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "86", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "87", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "88", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "89", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "90", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "91", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "92", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "93", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "94", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "95", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "96", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "97", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "98", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    },
+    {
+        "AniosServicio": "99", 
+        "Factor": "50", 
+        "Porcentaje": "90"
+    }
+]
